@@ -61,7 +61,7 @@ html {
 
 .col-33 {
     width: calc(100% / 3);
-    padding: 0px 25px;
+    padding: 0px 10px;
 }
 
 .col-16 {
@@ -89,6 +89,10 @@ html {
 
 .button.sm {
     padding: 7px 14px;
+}
+
+i {
+    margin: 10px 5px;
 }
 
 /* HEADER  */
@@ -139,10 +143,53 @@ html {
     padding-top: 50px;
 }
 
+/* PLANS SECTION  */
+
+.plans-choice {
+    padding: 75px 0px;
+}
+
+.title {
+    font-size: 35px;
+    padding: 35px 0px;
+}
+
+.plans-hdr {
+    padding-bottom: 50px;
+}
+
+input {
+    padding-right: 25px;
+}
+
+.plans-btn {
+    margin-right: 30px;
+    display: inline-block;
+}
+
+/* .plans-card {
+    padding: 30px;
+} */
+
+.plans-card{
+    border: 1px solid rgb(219,219,221);
+}
+
+.plans-card hr {
+    border: none;
+    height: 1px;
+    background-color: rgb(219,219,221);
+}
+
+.plans .col-100 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: column;
+}
 /* DEBUG  */
 
 .debug.hero {
-    border: 1px solid rgb(107, 69, 69);
+    border: 1px solid black;
 }
 
 .debug.hero .row > * {
@@ -153,3 +200,21 @@ html {
 .debug.container {
     border: 1px solid black;
 }
+
+.debug.plans-choice {
+    border: 1px solid black;
+}
+
+.debug.container-sm {
+    border: 1px solid black;
+}
+
+.debug.plans-choice .row > * {
+    border: 1px solid black;
+    min-height: 400px;
+}
+
+.debug.plans-choice .plans-card {
+    border: 1px solid black;
+    min-height: 300px;
+} 
