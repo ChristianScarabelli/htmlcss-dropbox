@@ -65,7 +65,6 @@ html {
 
 .col-33 {
     width: calc(100% / 3);
-    padding: 0px 10px;
 }
 
 .col-16 {
@@ -143,9 +142,10 @@ i {
     gap: 35px;
 }
 
-.hero-arrow {
+.hero-arrow > .fa-solid.fa-arrow-down {
     font-size: 50px;
     padding-top: 50px;
+    color: black;
 }
 
 /* PLANS SECTION  */
@@ -176,31 +176,33 @@ input {
     display: inline-block;
 }
 
-/* .plans-card {
-    padding: 30px;
-} */
-
-.plans-card{
-    border: 1px solid rgb(219,219,221);
-    display: flex;
-    flex-flow: column;
-    gap: 35px;
-}
-
 .plans-card hr {
     border: none;
     height: 1px;
     background-color: rgb(219,219,221);
 }
 
-.plans .col-100 {
-    display: flex;
-    flex-wrap: wrap;
-    flex-flow: column;
+.plans-choice .col-33,
+.plans-choice .col-100 {
+    border: 1px solid rgb(219,219,221);
 }
 
 .plans-card-user {
     text-align: center;
+}
+
+.plans-card-main {
+    display: flex;
+    flex-flow: column;
+    gap: 35px;
+    position: relative;
+    /* padding: 30px 30px; */
+}
+
+.button.plans.blue {
+    position: absolute;
+    top: 30px;
+    right: 30px;
 }
 
 .buy-now {
