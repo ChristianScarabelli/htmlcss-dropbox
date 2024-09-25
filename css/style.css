@@ -32,12 +32,12 @@ html {
 }
 
 .container {
-    max width: 1200px;
+    max-width: 1100px;
     margin: 0 auto;
 }
 
 .container-sm {
-    max-width: 1000px;
+    max-width: 900px;
     margin: 0 auto;
 }
 
@@ -50,6 +50,7 @@ html {
     width: 100%;
 }
 
+
 .col-60 {
     width: 60%;
 }
@@ -60,6 +61,7 @@ html {
 
 .col-33 {
     width: calc(100% / 3);
+    padding: 0px 25px;
 }
 
 .col-16 {
@@ -107,4 +109,47 @@ html {
 .logo.hdr {
     display: block;
     height: 25px;
+}
+
+/* HERO SECTION  */
+
+.hero {
+    background-color: rgb(180,208,231);
+    padding-bottom: 50px;
+}
+
+.hero-title {
+    font-size: 55px;
+    font-weight: 800;
+}
+
+.hero .col-100 {
+    padding: 80px 0px;
+}
+
+.hero .col-33 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: column;
+    gap: 35px;
+}
+
+.hero-arrow {
+    font-size: 50px;
+    padding-top: 50px;
+}
+
+/* DEBUG  */
+
+.debug.hero {
+    border: 1px solid rgb(107, 69, 69);
+}
+
+.debug.hero .row > * {
+    border: 1px solid black;
+    min-height: 400px;
+}
+
+.debug.container {
+    border: 1px solid black;
 }
