@@ -1,3 +1,19 @@
+:root {
+	--blue: #0061ff;
+	--light-blue: #b4d0e7;
+	--light-gray: #f5f5f5;
+	--black: #000000;
+	--white: #ffffff;
+    --light-green: #A2D39B;
+    --very-light-green: #d1e9cd; 
+    --acqua-blue: #0093CE;
+    --grapevine-red: #61082B;
+    --red: #FF1C1C;
+    --dark-red: #D5001F;
+    --dark-blue: #0D2481;
+    --dark-yellow: #FFD830;
+}
+
 /* RESET RULES  */
 
 * {
@@ -48,7 +64,6 @@ html {
 	display: flex;
 	flex-wrap: wrap;
     row-gap: 50px;
-    margin-bottom: 30px;
 }
 
 .row > * {
@@ -91,11 +106,11 @@ html {
 
 .button.blue {
     color: white;
-    background-color: rgb(0,97,255);
+    background-color: var(--blue);
 }
 
 .button.white {
-    color: black;
+    color: var(--black);
     background-color: white;
     border: 1px solid black;
     padding: 12px 20px;
@@ -151,7 +166,7 @@ li i {
 /* HERO SECTION  */
 
 .hero {
-    background-color: rgb(180,208,231);
+    background-color: var(--light-blue);
     padding-bottom: 50px;
 }
 
@@ -213,11 +228,11 @@ input {
 .plans-card hr {
     border: none;
     height: 1px;
-    background-color: rgb(219,219,221);
+    background-color: var(--light-gray);
 }
 
 .plans .plans-card {
-    border: 1px solid rgb(219,219,221);
+    border: 1px solid var(--light-gray);
     height: 100%;
 }
 
@@ -241,17 +256,17 @@ input {
 
 .buy-now {
     text-decoration: underline;
-    color: rgb(0,97,255);
+    color: var(--blue);
 }
 
 .buy-now-line {
     border: none;
-    background-color: rgb(219,219,221);
+    background-color: var(--light-gray);
     width: 25%;
 }
 
 .fa-lg {
-    color: rgb(0,97,255);
+    color: var(--blue);
 }
 
 .buy-now-section {
@@ -279,18 +294,39 @@ input {
     gap: 35px;
 }
 
-/* DROPBOX FEATURES SECTION  */
+/* DROPBOX USERS SECTION  */
 
+.users {
+    margin: 100px 0px;
+}
 
+.customers-link {
+    color: var(--blue);
+    text-decoration: underline;
+}
+
+/* SPONSOR SECTION  */
+
+.no-padding-row > * {
+    padding: 0px;
+}
+
+.sponsor-logo {
+    color: var(--white)
+}
+
+.sponsor-card.border-green {
+    box-shadow: inset 0 0 0 15px var(--very-light-green);
+}
 
 /* DEBUG  */
 
 .debug.hero {
-    border: 1px solid black;
+    border: 1px solid var(--black);
 }
 
 .debug.hero .row > * {
-    border: 1px solid black;
+    border: 1px solid var(--black);
     min-height: 400px;
 }
 
@@ -329,7 +365,21 @@ input {
     min-height: 300px;
 }
 
-.debug .business-card > *{
+.debug .business-card > * {
     border: 1px solid black;
     min-height: 100px;
+}
+
+.debug.sponsor {
+    border: 1px solid black;
+}
+
+.debug.sponsor .row > * {
+    border: 1px solid black;
+    min-height: 600px;
+}
+
+.debug .sponsor-card {
+    border: 1px solid red;
+    min-height: 300px;
 }
