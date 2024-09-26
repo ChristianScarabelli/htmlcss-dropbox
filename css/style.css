@@ -235,7 +235,7 @@ input {
 .space-line  {
     border: none;
     height: 1px;
-    background-color: var(--light-gray);
+    background-color: var(--black);
     width: 30%;
 }
 
@@ -317,8 +317,32 @@ input {
     box-shadow: inset 0 0 0 15px var(--very-light-green);
 }
 
-.sponsor .col-16 {
-    max-height: 600px;
+.col-16 .sponsor-card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    min-height: 200px; 
+    aspect-ratio: 1 / 1;
+    padding: 45px;
+}
+
+.col-33 .sponsor-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    min-height: 200px; /* Imposta un'altezza minima per uniformità */
+    aspect-ratio: 1 / 1;
+    padding: 45px;
+    gap: 30px;
+}
+
+.sponsor-logo {
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(335deg) brightness(104%) contrast(101%);
+}
+
+.big-logo {
+    width: 70%;
 }
 
 .space-line .sponsor {
