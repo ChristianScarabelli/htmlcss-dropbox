@@ -313,3 +313,12 @@ input {
     border: 1px solid black;
     min-height: 300px;
 } 
+
+.debug.dropbox-features {
+    border: 1px solid black;
+}
+
+.debug.dropbox-features .row > * {
+    border: 1px solid black;
+    min-height: 300px;
+}
