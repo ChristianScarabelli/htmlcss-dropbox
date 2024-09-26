@@ -12,15 +12,15 @@
 </head>
 <body>
     <header class="main-header">
-        <nav class="container-full">
-            <div class="row hdr">
-                <ul>
+        <nav class="container-fluid">
+            <div class="row hdr no-gutter">
+                <ul class="menu">
                     <li><a href="#"><img src="./img/img/logo-small.png" alt="logo" height="20" class="logo hdr"></a></li>
                     <li><a href="#">Perchè Dropbox</a></li>
                     <li><a href="#">Funzioni</a></li>
                     <li><a href="#">Piani e Prezzi</a></li>
                 </ul>
-                <ul>
+                <ul class="menu">
                     <li><a href="#">Supporto</a></li>
                     <li><a href="#">Contatta l'ufficio vendite</a></li>
                     <li><a href="#">Accedi</a></li>
@@ -58,17 +58,21 @@
                 </div>
             </div>
         </section>
-        <section class="plans-choice">
+        <section class="plans">
             <div class="container-sm">
                 <div class="plans-hdr">
-                    <h2 class="title">Trova il piano business che fa per te</h2>
-                    <div class="plans-btn">
-                        <input type="radio">
-                        <span>Fatturazione mensile</span>
-                    </div>
-                    <div class="plans-btn">
-                        <input type="radio">
-                        <span>Fatturazione annuale</span>
+                    <div class="row">
+                        <div class="col-100">
+                            <h2 class="title">Trova il piano business che fa per te</h2>
+                            <div class="plans-btn">
+                                <input checked type="radio">
+                                <span>Fatturazione mensile</span>
+                            </div>
+                            <div class="plans-btn">
+                                <input type="radio">
+                                <span>Fatturazione annuale</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="row">
@@ -90,11 +94,11 @@
                                 <li><i class="fa-solid fa-share-nodes"></i>Funzioni di produttività premium e condivisione file semplice e sicura</li>
                             </ul>
                             <a href="#" class="button blue">Prova gratis per 30 giorni</a>
-                            <ul class="buy-now-section">
-                                <li>Oppure
-                                    <a href="#" class="buy-now">aquista ora</a></li>
-                                <li><hr class="buy-now-line"></li>
-                            </ul>
+                            <div class="buy-now-section">
+                                <span>Oppure  <a href="#" class="buy-now">aquista ora</a>
+                                </span>
+                                <hr class="buy-now-line">
+                            </div>
                             <strong>Punti Salienti del piano</strong>
                             <ul>
                                 <li><i class="fa-solid fa-check fa-lg"></i>Invia file fino a 100 GB con Dropbox Transfert</li>
@@ -122,11 +126,11 @@
                                 <li><i class="fa-solid fa-share-nodes"></i>Sofisticate funzioni di controllo e per tenere al sicuto tutti i file del tuo team</li>
                             </ul>
                             <a href="#" class="button blue">Prova gratis per 30 giorni</a>
-                            <ul class="buy-now-section">
-                                <li>Oppure
-                                    <a href="#" class="buy-now">aquista ora</a></li>
-                                <li><hr class="buy-now-line"></li>
-                            </ul>
+                            <div class="buy-now-section">
+                                <span>Oppure  <a href="#" class="buy-now">aquista ora</a>
+                                </span>
+                                <hr class="buy-now-line">
+                            </div>
                             <strong>Punti Salienti del piano</strong>
                             <ul>
                                 <li><i class="fa-solid fa-check fa-lg"></i>Nessun limite di spazio per i file</li>
@@ -156,11 +160,11 @@
                                 <li><i class="fa-solid fa-share-nodes"></i>Assistenza personalizzata per aiutare gli amministratori in una gestione su larga scala</li>
                             </ul>
                             <a href="#" class="button blue">Prova gratis per 30 giorni</a>
-                            <ul class="buy-now-section">
-                                <li>Oppure
-                                    <a href="#" class="buy-now">aquista ora</a></li>
-                                <li><hr class="buy-now-line"></li>
-                            </ul>
+                            <div class="buy-now-section">
+                                <span>Oppure  <a href="#" class="buy-now">aquista ora</a>
+                                </span>
+                                <hr class="buy-now-line">
+                            </div>
                             <strong>Punti Salienti del piano</strong>
                             <ul>
                                 <li><i class="fa-solid fa-check fa-lg"></i>Cartelle offline su dispositivi mobili</li>
@@ -170,27 +174,34 @@
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-100">
-                    <div class="plans-card">
-                        <div class="plans-card-user">
-                            <span><i class="fa-solid fa-building"></i> Team</span>
-                            <hr>
-                        </div>
-                        <div class="plans-card-main">
-                            <h3 class="subtitle">Enterprise</h3>
-                            <ul>
-                                <li><strong>Contatta l'ufficio vendite per i prezzi</strong></li>
-                            </ul>
-                            <p>
-                                Soluzioni personalizzate e supporto su misura per aiutare i professionisti IT nella gestione su qualsiasi scala.
-                            </p>
-                            <a href="#" class="button blue plans">Contatta l'ufficio vendite</a>
+                    <div class="col-100">
+                        <div class="plans-card">
+                            <div class="plans-card-user">
+                                <span><i class="fa-solid fa-building"></i> Team</span>
+                                <hr>
+                            </div>
+                            <div class="row">
+                                <div class="col-60">
+                                    <div class="plans-card-ftr">
+                                        <h3 class="subtitle">Enterprise</h3>
+                                        <div>
+                                            <strong>Contatta l'ufficio vendite per i prezzi</strong>
+                                        </div>
+                                        <p>
+                                            Soluzioni personalizzate e supporto su misura per aiutare i professionisti IT nella gestione su qualsiasi scala.
+                                        </p>                                   
+                                    </div>
+                                </div>
+                                <div class="col-40">
+                                    <div class="plans-card-ftr">
+                                        <a href="#" class="button blue">Contatta l'ufficio vendite</a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-
         </section>
     </main>
     <footer>

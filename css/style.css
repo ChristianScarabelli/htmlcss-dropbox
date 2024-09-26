@@ -10,10 +10,6 @@ ul, ol {
     list-style: none;
 }
 
-li {
-    padding-bottom: 10px;
-}
-
 a {
     color: currentColor;
     text-decoration: none;
@@ -30,30 +26,41 @@ html {
 
 /* LAYOUT  */
 
-.container-full {
+.container-fluid {
     max-width: 100%;
     margin: 0 auto;
+    padding: 0px 15px;
 }
 
 .container {
-    max-width: 1100px;
+    max-width: 1200px;
     margin: 0 auto;
+    padding: 0px 15px;
 }
 
 .container-sm {
-    max-width: 900px;
+    max-width: 1000px;
     margin: 0 auto;
+    padding: 0px 15px;
 }
 
 .row {
-    display: flex;
-    flex-wrap: wrap;
+	display: flex;
+	flex-wrap: wrap;
+    row-gap: 50px;
+}
+
+.row > * {
+	padding: 0px 25px;
+}
+
+.row.no-gutter > * {
+	padding: 0px;
 }
 
 .col-100 {
     width: 100%;
 }
-
 
 .col-60 {
     width: 60%;
@@ -95,8 +102,18 @@ html {
     padding: 7px 14px;
 }
 
+li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
 i {
     margin: 10px 5px;
+}
+
+li i {
+    margin-right: 15px;
 }
 
 /* HEADER  */
@@ -104,14 +121,23 @@ i {
 .row.hdr {
     justify-content: space-between;
     align-items: center;
-    padding: 25px 20px;
+    padding: 15px;
 }
 
 .row.hdr ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 35px;
+}
+
+.container-fluid .menu a {
+	display: block;
+	line-height: 34px;
+	padding: 0px 16px;
+}
+
+.menu li {
+    padding: 0px;
 }
 
 .logo.hdr {
@@ -124,6 +150,10 @@ i {
 .hero {
     background-color: rgb(180,208,231);
     padding-bottom: 50px;
+}
+
+.hero .container .row {
+    gap: 30px;
 }
 
 .hero-title {
@@ -140,17 +170,17 @@ i {
     flex-wrap: wrap;
     flex-flow: column;
     gap: 35px;
+    padding: 0px;
 }
 
 .hero-arrow > .fa-solid.fa-arrow-down {
     font-size: 50px;
-    padding-top: 50px;
-    color: black;
+    padding-top: 100px;
 }
 
 /* PLANS SECTION  */
 
-.plans-choice {
+.plans {
     padding: 75px 0px;
 }
 
@@ -182,9 +212,9 @@ input {
     background-color: rgb(219,219,221);
 }
 
-.plans-choice .col-33,
-.plans-choice .col-100 {
+.plans .plans-card {
     border: 1px solid rgb(219,219,221);
+    height: 100%;
 }
 
 .plans-card-user {
@@ -195,14 +225,14 @@ input {
     display: flex;
     flex-flow: column;
     gap: 35px;
-    position: relative;
-    /* padding: 30px 30px; */
+    padding: 25px;
 }
 
-.button.plans.blue {
-    position: absolute;
-    top: 30px;
-    right: 30px;
+.plans-card-ftr {
+    padding: 25px 0px;
+    display: flex;
+    flex-flow: column;
+    gap: 35px;
 }
 
 .buy-now {
@@ -216,7 +246,7 @@ input {
     width: 25%;
 }
 
-.fa-solid, .fa-check, .fa-lg {
+.fa-lg {
     color: rgb(0,97,255);
 }
 
@@ -237,6 +267,10 @@ input {
     border: 1px solid black;
     min-height: 400px;
 }
+
+.debug [class^='col-'] {
+    border: 1px solid cornflowerblue;
+} 
 
 .debug.container {
     border: 1px solid black;
