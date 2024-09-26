@@ -155,6 +155,7 @@ li i {
 
 .menu li {
     padding: 0px;
+    margin: 0px;
 }
 
 .logo.hdr {
@@ -203,7 +204,7 @@ li i {
 
 .title {
     font-size: 35px;
-    padding: 35px 0px;
+    padding: 45px 0px;
 }
 
 .subtitle {
@@ -336,6 +337,31 @@ input {
     align-items: center;
     padding: 35px 0px;
 }
+
+/* FAQ SECTION  */
+
+.faq {
+    padding: 100px 0px;
+}
+
+.space-line-faq {
+    border: none;
+    height: 1px;
+    background-color: var(--light-gray);
+}
+
+.faq .col-100 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--light-gray);
+    padding: 20px 0px;
+}
+
+
+/* FOOTER  */
+
 
 
 
