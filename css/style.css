@@ -12,6 +12,7 @@
     --dark-red: #D5001F;
     --dark-blue: #0D2481;
     --dark-yellow: #FFD830;
+    --grey: grey; 
 }
 
 /* RESET RULES  */
@@ -122,7 +123,7 @@ html {
 li {
     display: flex;
     align-items: center;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 i {
@@ -368,6 +369,18 @@ input {
     color: var(--white);
 }
 
+.main-ftr hr {
+    border: none;
+    height: 1px;
+    background-color: var(--grey);
+    margin-top: 50px;
+    width: 60%;
+}
+
+.ftr-language {
+    color: var(--grey);
+    margin-top: 40px;
+}
 
 /* DEBUG  */
 
