@@ -362,7 +362,11 @@ input {
 
 /* FOOTER  */
 
-
+.main-ftr {
+    padding: 100px 0px 50px;
+    background-color: var(--black);
+    color: var(--white);
+}
 
 
 /* DEBUG  */
@@ -428,4 +432,13 @@ input {
 .debug .sponsor-card {
     border: 1px solid red;
     min-height: 300px;
+}
+
+.debug.main-ftr {
+    border: 1px solid var(--dark-yellow);
+}
+
+.debug.main-ftr .row > * {
+    border: 1px solid var(--dark-yellow);
+    min-height: 400px;
 }
