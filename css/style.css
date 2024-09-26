@@ -48,6 +48,7 @@ html {
 	display: flex;
 	flex-wrap: wrap;
     row-gap: 50px;
+    margin-bottom: 30px;
 }
 
 .row > * {
@@ -193,6 +194,7 @@ li i {
 
 .subtitle {
     font-size: 25px;
+    padding: 25px 0px;
 }
 
 .plans-hdr {
@@ -277,6 +279,10 @@ input {
     gap: 35px;
 }
 
+/* DROPBOX FEATURES SECTION  */
+
+
+
 /* DEBUG  */
 
 .debug.hero {
@@ -321,4 +327,9 @@ input {
 .debug.dropbox-features .row > * {
     border: 1px solid black;
     min-height: 300px;
+}
+
+.debug .business-card > *{
+    border: 1px solid black;
+    min-height: 100px;
 }
