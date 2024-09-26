@@ -84,7 +84,7 @@ html {
 
 .button {
     line-height: 30px;
-    padding: 10px;
+    padding: 12px;
     text-align: center;
 }
 
@@ -96,6 +96,8 @@ html {
 .button.white {
     color: black;
     background-color: white;
+    border: 1px solid black;
+    padding: 12px 20px;
 }
 
 .button.sm {
@@ -254,6 +256,24 @@ input {
     display: flex;
     flex-flow: column;
     flex-wrap: wrap;
+    gap: 35px;
+}
+
+/* FIND PARTNER SECTION  */
+
+.find-partner-section {
+    padding: 75px 0px;
+}
+
+.find-partner-section .row {
+    align-items: center;
+}
+
+.find-partner-section .col-40 {
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    align-items: center;
     gap: 35px;
 }
 
