@@ -122,7 +122,7 @@ html {
 
 li {
     display: flex;
-    align-items: center;
+    align-items: baseline;
     margin-bottom: 20px;
 }
 
@@ -196,6 +196,13 @@ li i {
     font-size: 50px;
     padding-top: 100px;
 }
+
+/* PER FAR SBORDARE IMMAGINE  */
+/* .jumbo-img {
+    margin-bottom: -100px;
+} */
+
+
 
 /* PLANS SECTION  */
 
@@ -322,7 +329,7 @@ input {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    min-height: 200px; 
+    width: 100%; 
     aspect-ratio: 1 / 1;
     padding: 45px;
 }
@@ -331,7 +338,7 @@ input {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    min-height: 200px; /* Imposta un'altezza minima per uniformità */
+    width: 100%;  /* 100% della larghezza del contenitore con aspect radio da quadrato */
     aspect-ratio: 1 / 1;
     padding: 45px;
     gap: 30px;
@@ -339,6 +346,11 @@ input {
 
 .sponsor-logo {
     filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(335deg) brightness(104%) contrast(101%);
+    /* filter: invert(1) */
+}
+
+.sponsor img {
+    width: 100%;
 }
 
 .big-logo {
@@ -479,3 +491,7 @@ input {
     border: 1px solid var(--dark-yellow);
     min-height: 400px;
 }
+
+/* MEGLIO DARE PADDING ALLE CARD E NON AI SINGOLI ELEMENTI  */
+
+/* USARE CLASSE NO-GUTTER PER ROW,ECC NO PADDING  */
